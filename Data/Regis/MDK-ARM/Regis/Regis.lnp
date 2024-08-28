@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"regis\startup_stm32f103xb.o"
+"regis\main.o"
+"regis\stm32f1xx_it.o"
+"regis\stm32f1xx_hal_msp.o"
+"regis\stm32f1xx_hal_gpio_ex.o"
+"regis\stm32f1xx_hal_tim.o"
+"regis\stm32f1xx_hal_tim_ex.o"
+"regis\stm32f1xx_hal.o"
+"regis\stm32f1xx_hal_rcc.o"
+"regis\stm32f1xx_hal_rcc_ex.o"
+"regis\stm32f1xx_hal_gpio.o"
+"regis\stm32f1xx_hal_dma.o"
+"regis\stm32f1xx_hal_cortex.o"
+"regis\stm32f1xx_hal_pwr.o"
+"regis\stm32f1xx_hal_flash.o"
+"regis\stm32f1xx_hal_flash_ex.o"
+"regis\stm32f1xx_hal_exti.o"
+"regis\system_stm32f1xx.o"
+--strict --scatter "Regis\Regis.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Regis.map" -o Regis\Regis.axf

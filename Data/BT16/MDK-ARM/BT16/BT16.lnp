@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"bt16\startup_stm32f103xb.o"
+"bt16\main.o"
+"bt16\stm32f1xx_it.o"
+"bt16\stm32f1xx_hal_msp.o"
+"bt16\stm32f1xx_hal_gpio_ex.o"
+"bt16\stm32f1xx_hal_tim.o"
+"bt16\stm32f1xx_hal_tim_ex.o"
+"bt16\stm32f1xx_hal.o"
+"bt16\stm32f1xx_hal_rcc.o"
+"bt16\stm32f1xx_hal_rcc_ex.o"
+"bt16\stm32f1xx_hal_gpio.o"
+"bt16\stm32f1xx_hal_dma.o"
+"bt16\stm32f1xx_hal_cortex.o"
+"bt16\stm32f1xx_hal_pwr.o"
+"bt16\stm32f1xx_hal_flash.o"
+"bt16\stm32f1xx_hal_flash_ex.o"
+"bt16\stm32f1xx_hal_exti.o"
+"bt16\system_stm32f1xx.o"
+--strict --scatter "BT16\BT16.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BT16.map" -o BT16\BT16.axf

@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"lcd hd44780\startup_stm32f103xb.o"
+"lcd hd44780\main.o"
+"lcd hd44780\stm32f1xx_it.o"
+"lcd hd44780\stm32f1xx_hal_msp.o"
+"lcd hd44780\stm32f1xx_hal_gpio_ex.o"
+"lcd hd44780\stm32f1xx_hal_tim.o"
+"lcd hd44780\stm32f1xx_hal_tim_ex.o"
+"lcd hd44780\stm32f1xx_hal.o"
+"lcd hd44780\stm32f1xx_hal_rcc.o"
+"lcd hd44780\stm32f1xx_hal_rcc_ex.o"
+"lcd hd44780\stm32f1xx_hal_gpio.o"
+"lcd hd44780\stm32f1xx_hal_dma.o"
+"lcd hd44780\stm32f1xx_hal_cortex.o"
+"lcd hd44780\stm32f1xx_hal_pwr.o"
+"lcd hd44780\stm32f1xx_hal_flash.o"
+"lcd hd44780\stm32f1xx_hal_flash_ex.o"
+"lcd hd44780\stm32f1xx_hal_exti.o"
+"lcd hd44780\system_stm32f1xx.o"
+--strict --scatter "LCD HD44780\LCD HD44780.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD HD44780.map" -o "LCD HD44780\LCD HD44780.axf"

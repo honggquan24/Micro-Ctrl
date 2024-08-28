@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"kiemtragiuakilan2\startup_stm32f103xb.o"
+"kiemtragiuakilan2\main.o"
+"kiemtragiuakilan2\stm32f1xx_it.o"
+"kiemtragiuakilan2\stm32f1xx_hal_msp.o"
+"kiemtragiuakilan2\stm32f1xx_hal_gpio_ex.o"
+"kiemtragiuakilan2\stm32f1xx_hal_tim.o"
+"kiemtragiuakilan2\stm32f1xx_hal_tim_ex.o"
+"kiemtragiuakilan2\stm32f1xx_hal.o"
+"kiemtragiuakilan2\stm32f1xx_hal_rcc.o"
+"kiemtragiuakilan2\stm32f1xx_hal_rcc_ex.o"
+"kiemtragiuakilan2\stm32f1xx_hal_gpio.o"
+"kiemtragiuakilan2\stm32f1xx_hal_dma.o"
+"kiemtragiuakilan2\stm32f1xx_hal_cortex.o"
+"kiemtragiuakilan2\stm32f1xx_hal_pwr.o"
+"kiemtragiuakilan2\stm32f1xx_hal_flash.o"
+"kiemtragiuakilan2\stm32f1xx_hal_flash_ex.o"
+"kiemtragiuakilan2\stm32f1xx_hal_exti.o"
+"kiemtragiuakilan2\system_stm32f1xx.o"
+--strict --scatter "KiemTraGiuaKiLan2\KiemTraGiuaKiLan2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "KiemTraGiuaKiLan2.map" -o KiemTraGiuaKiLan2\KiemTraGiuaKiLan2.axf
